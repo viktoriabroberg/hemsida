@@ -11,6 +11,7 @@ body {
     font-family: 'MinFontFamilj', sans-serif;
     letter-spacing: 10px;
     background: linear-gradient(#bbe29b,#99C76B,#8bb75feb);
+    background-attachment: fixed;
     height: 100vh;
     margin: 0px;
 }
@@ -115,35 +116,12 @@ h3{
     font-size: 40px;
     color: #393939;
 }
-.menu-item-sallad:hover .box,
-.menu-item-tallrik:hover .box,
-.menu-item-pizza:hover .box,
-.menu-item-rulle:hover .box,
-.menu-item-tillbehör:hover .box,
-.menu-item-övrigt:hover .box{
-    transform: scale(1.1); 
-    transition: transform 0.3s ease; 
-}
-.menu-item-pizza:hover .box {
-    background-image: url('pizza.jpeg');
-}
-.menu-item-sallad:hover .box {
-    background-image: url('sallad.jpeg');
-}
-.menu-item-rulle:hover .box {
-    background-image: url('pizza.jpeg');
-}
-.menu-item-tillbehör:hover .box {
-    background-image: url('tillbehör.jpeg');
-}
-.menu-item-tallrik:hover .box {
-    background-image: url('kebab.jpeg');
-}
-.menu-item-övrigt:hover .box {
-    background-image: url('pizza.jpeg');
-}
-
-.box {
+.menu-item-sallad,
+.menu-item-pizza,
+.menu-item-tallrik,
+.menu-item-tillbehör,
+.menu-item-rulle,
+.menu-item-övrigt{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,7 +129,16 @@ h3{
     width: 400px;
     height: 200px;
     box-shadow: 5px 50px 50px rgba(0, 0, 0, 0.2);
-   
+
+}
+.menu-item-sallad:hover,
+.menu-item-tallrik:hover,
+.menu-item-pizza:hover,
+.menu-item-rulle:hover,
+.menu-item-tillbehör:hover,
+.menu-item-övrigt:hover{
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
 }
 
 .extra{
@@ -258,7 +245,7 @@ td {
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
     .grid-container {
         grid-template-columns: 1fr;
     }
