@@ -244,7 +244,6 @@ td {
 }
 
 
-
 @media (max-width: 600px) {
     .grid-container {
         grid-template-columns: 1fr;
@@ -259,6 +258,7 @@ td {
         grid-area: 1/1/2/2;
         max-width: 85%;
         order: 1;
+        margin: 0;
     }
     .container-öppet,
     .container-tider{
@@ -275,5 +275,34 @@ td {
     }
     .container-row{
         grid-template-columns: 1fr;
-    }
+    }   
+
+    @media print {
+        body {
+            background-color: white;
+
+          }
+        
+        .menu-container {
+          display: none;
+        }
+      
+        h3 {
+          display: block !important;
+        }
+      
+        .menu-item-tallrik,
+        .menu-item-sallad,
+        .menu-item-pizza,
+        .menu-item-tillbehör,
+        .menu-item-rulle,
+        .menu-item-övrigt {
+          display: block !important;
+        }
+      
+        a {
+          text-decoration: none;
+    
+        }
+      }
 }
