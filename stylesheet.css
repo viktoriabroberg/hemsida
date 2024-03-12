@@ -280,29 +280,36 @@ td {
     @media print {
         body {
             background-color: white;
-
-          }
-        
-        .menu-container {
-          display: none;
         }
-      
-        h3 {
-          display: block !important;
+    
+        .h3 {
+            display: block;
+            color: black;
         }
-      
-        .menu-item-tallrik,
+        .menu-item-sallad:hover,
+        .menu-item-tallrik:hover,
+        .menu-item-pizza:hover,
+        .menu-item-rulle:hover,
+        .menu-item-tillbehör:hover,
+        .menu-item-övrigt:hover{
+            transform: none !important;
+            text-decoration: none;
+            background-color: transparent !important;
+        }
+    
         .menu-item-sallad,
         .menu-item-pizza,
+        .menu-item-tallrik,
         .menu-item-tillbehör,
         .menu-item-rulle,
         .menu-item-övrigt {
-          display: block !important;
+            box-shadow: none;
+            background-color: transparent; 
         }
-      
-        a {
-          text-decoration: none;
     
+        .menu-container a {
+            text-decoration: none;
+            color: black;
         }
       }
 }
