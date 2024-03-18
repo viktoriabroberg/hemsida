@@ -257,11 +257,10 @@ td {
 @media (max-width: 767px) {
 
     .grid-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
     }
     .left-menu {
         position: relative;
-    
         grid-template-columns: auto;
         max-width: 85%;
         order: 3;
@@ -280,14 +279,14 @@ td {
         top: 60%;
         left: 40%;
         transform: translate(-50%, -50%);
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
     }
     .menu-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
     
     }
     .container-row{
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
       
     }  
     .container-row p{
@@ -341,15 +340,11 @@ td {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
     }
-    
 }
-
 
 
 @media print {
     body {
         background-color: white;
     }
-
-
-    }
+}
