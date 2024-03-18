@@ -262,12 +262,12 @@ td {
         position: relative;
     
         grid-template-columns: 1fr;
-        max-width: 85%;
+        max-width: 50%;
         order: 3;
     }
     .image-content{
         grid-area: 1/1/1;
-        max-width: 85%;
+        max-width: 50%;
         grid-row: 1;
         order: 1;
         margin: 0;
@@ -290,10 +290,13 @@ td {
     
     }  
     .container-row p{
-        font-size: 70%;
+        font-size: 50%;
     }
     .h2{
-        font-size: 70%;
+        font-size: 50%;
+    } 
+      .h3{
+        font-size: 50%;
     } 
     .googlemaps {
         display: grid;
