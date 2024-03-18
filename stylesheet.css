@@ -262,12 +262,12 @@ td {
         position: relative;
     
         grid-template-columns: 1fr;
-        max-width: 50%;
+        max-width: 85%;
         order: 3;
     }
     .image-content{
         grid-area: 1/1/1;
-        max-width: 50%;
+        max-width: 85%;
         grid-row: 1;
         order: 1;
         margin: 0;
@@ -290,55 +290,18 @@ td {
     
     }  
     .container-row p{
-        font-size: 50%;
+        font-size: 70%;
     }
     .h2{
-        font-size: 50%;
+        font-size: 70%;
     } 
-      .h3{
-        font-size: 50%;
-    } 
-    .googlemaps {
-        display: grid;
-        grid-area: 3/1; /* Grid-området börjar på rad 2 och kolumn 1 och sträcker sig över en rad och tre kolumner */
-        align-self: end; /* Placera elementet längst ned på sin grid-cella */
-        width: 80; /* Anpassa bredden till 100% av förälderens bredd */
-        height: 80%; /* Anpassa höjden till 100% av förälderens höjd */
-    }
+
 
 
     @media print {
         body {
             background-color: white;
         }
-    
-        .h3 {
-            color: red;
-        }
-        .menu-item-sallad:hover,
-        .menu-item-tallrik:hover,
-        .menu-item-pizza:hover,
-        .menu-item-rulle:hover,
-        .menu-item-tillbehör:hover,
-        .menu-item-övrigt:hover{
-            transform: none;
-            text-decoration: none;
-            background-color: transparent;
-        }
-    
-        .menu-item-sallad,
-        .menu-item-pizza,
-        .menu-item-tallrik,
-        .menu-item-tillbehör,
-        .menu-item-rulle,
-        .menu-item-övrigt {
-            box-shadow: none;
-            background-color: transparent; 
-        }
-    
-        .menu-container a {
-            text-decoration: none;
-            color: black;
-        }
+
       }
 }
