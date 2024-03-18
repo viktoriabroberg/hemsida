@@ -5,17 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meny</title>
     <link rel="stylesheet" href="stylesheet.css">
+
+    <title>jQuery UI Draggable - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <style>
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #rea {
+        width: 50%;
+    }
+
+    #draggable {
+        width: 50%; 
+    }
+
+    #draggable { 
+        width: 200px; 
+        height: 100px; 
+        padding: 50px; 
+        background-color: #99C76B; 
+    }
+
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <script>
+    $( function() {
+      $( "#draggable" ).draggable();
+    } );
+    </script>
+     
 </head>
 <body>
-    <h3>Välj kategori</h3>
+    <button onclick="showMessage()">Show Message</button>
+    <script src="script.js"></script>
+
+    <script src="randomizer.js"></script>
+    <div class="container">
+      
+        
+        
+        <div id="rea"></div>
+        
+        <div id="draggable" class="ui-widget-content">
+            <p>Dra i mig!</p>
+
+        </div>
+    </div>
+  
+    </div>
+
+    <h3> Välj kategori </h3>
+
     <div class="menu-container">
+
         <div class="menu-item-tallrik">
             <a href="tallrik.html">Tallrik</a>
         </div>
         <div class="menu-item-sallad">
             <a href="sallad.html">Sallad</a>
         </div>
-        <div class="menu-item-pizza">
+        <div class="menu-item-pizza">   
             <a href="pizza.html">Pizza</a>
         </div>
         <div class="menu-item-tillbehör">
@@ -28,4 +85,7 @@
             <a href="ovrigt.html">Övrigt</a>
         </div>
     </div>
+
+    <script src="task3.js"></script>
 </body>
+</html>

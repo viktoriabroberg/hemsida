@@ -5,48 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Övrigt</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <title>jQuery UI Draggable - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <style>
+    #draggable { width: 150px; height: 150px; padding: 0.5em; }
+    </style>
+    <!-- Endast inkludera jQuery en gång -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#draggable" ).draggable();
+    } );
+    </script>
 </head>
-    <h3>Övrigt</h3>       
-    </div>
-    <body>
-        <div class = "container-row">
+ 
+<body>
 
-            <table>
-                <tr>
-                    <th>Rubrik 1</th>
-                    <th>Rubrik 2</th>
-                    <th>Rubrik 3</th>
-                </tr>
-                    <th>A</th>
-                    <th>B</th>
-                    <th>C</th>
-                <tr>
-                    <th>1</th>
-                    <th>2</th>
-                    <th>3</th>
-                </tr>
-                    <th>vänster</th>
-                    <th>mitten</th>
-                    <th>höger</th>
-                <tr>
-            </table>
-    
-            <ul>
-                <p>Rubriuk till lista</p>
-                <li>
-                    <p>A</p>
-                </li>
-                <li>
-                    <p>B</p>
-                </li>
-                <li>
-                    <p>C</p>
-                </li>
-            </ul>
+    <div id="draggable" class="ui-widget-content">
+        <p>Drag me around</p>
+    </div>
+
+    <h3>Övrigt</h3>       
+    <div class = "container-row">
+
+        <table>
+            <tr>
+                <th>Rubrik 1</th>
+                <th>Rubrik 2</th>
+                <th>Rubrik 3</th>
+            </tr>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+            </tr>
+                <th>vänster</th>
+                <th>mitten</th>
+                <th>höger</th>
+            <tr>
+        </table>
+
+        <ul>
+            <p>Rubriuk till lista</p>
+            <li>
+                <p>A</p>
+            </li>
+            <li>
+                <p>B</p>
+            </li>
+            <li>
+                <p>C</p>
+            </li>
+        </ul>
 
         <form id="form" name="form" method="post" action="https://formspree.io/your@email.com ">
-        
-            
             E-postadress:<br>
             <input type="text" name="epost" id="epost" /> <br>
             
@@ -54,14 +71,20 @@
             <textarea name="meddelande" id="meddelande" cols="45" rows="5"></textarea> <br>
             
             <input type="submit" name="skicka" id="skicka" value="Skicka meddelandet" />
-            
-            </form>
-        
+        </form>
 
-            <audio controls>
-                <source src="sunset-vibes-lo-fichillhop-9503.mp3" type="audio/mpeg">
-                </audio>
-        </div>
+        <audio controls>
+            <source src="sunset-vibes-lo-fichillhop-9503.mp3" type="audio/mpeg">
+        </audio>
+    </div>
     
-    </body>
+
+    <script>
+        $(document).ready(function(){
+            $("p").click(function(){
+                $(this).hide();
+            });
+        });
+    </script>
+</body>
 </html>

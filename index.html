@@ -6,15 +6,20 @@
     <meta name="author" content="Viktoria Broberg">
     <title>Startsida</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src = "jquery.js"></script>
+    <script type="text/javascript"src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 </head>
 <body>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <div class="grid-container">
-        <header class="image-content">
+        <header class="image-content" id="fadetest">
             <nav class="loggo-image">
                 <img src="LoggaNy.png" alt="Logga med text Älvans Pizzeria">
             </nav>
         </header>
-
+        
         <nav class="left-menu">
             <a class="left-menu-hitta" href="hittahit.html">Hitta hit</a>
             <a class="left-menu-meny" href="meny.html">Meny</a>
@@ -25,10 +30,25 @@
             <h1>Öppet alla dagar</h1>
         </section>
 
-      
+    
         <section class="container-tider">
             <h2>12 - 20 </h2>
         </section>
+    
     </div>
+
+
+    <script src="task3.js"></script>
+    
+
+   <script>
+    $(document).ready(function(){
+        $("#fadetest").click(function(){
+            $(this).fadeTo("slow",0.1);
+        });
+    });
+   </script>
+   
+   
 </body>
 </html>
