@@ -344,6 +344,9 @@ td {
 
 
 @media print {
+    h3{
+        display: none !important;
+    }
     body {
         background-color: white;
     }
